@@ -1,0 +1,919 @@
+INPUT MANAGER (dumpsys input)
+
+Input Manager State:
+  Interactive: false
+  System UI Visibility: 0x0
+  Pointer Speed: 0
+  Pointer Gestures Enabled: true
+  Show Touches: true
+  Pointer Capture Enabled: false
+
+Event Hub State:
+  BuiltInKeyboardId: -2
+  Devices:
+    -1: Virtual
+      Classes: 0x40000023
+      Path: <virtual>
+      Enabled: true
+      Descriptor: a718a782d34bc767f4689c232d64d527998ea7fd
+      Location: 
+      ControllerNumber: 0
+      UniqueId: <virtual>
+      Identifier: bus=0x0000, vendor=0x0000, product=0x0000, version=0x0000
+      KeyLayoutFile: /system/usr/keylayout/Generic.kl
+      KeyCharacterMapFile: /system/usr/keychars/Virtual.kcm
+      ConfigurationFile: 
+      HaveKeyboardLayoutOverlay: false
+      VideoDevice: <none>
+    1: kona-mtp-snd-card Button Jack
+      Classes: 0x00000001
+      Path: /dev/input/event3
+      Enabled: true
+      Descriptor: a2d7eb6033852498ee22404f5cf0a92cd2b9eb46
+      Location: ALSA
+      ControllerNumber: 0
+      UniqueId: 
+      Identifier: bus=0x0000, vendor=0x0000, product=0x0000, version=0x0000
+      KeyLayoutFile: /system/usr/keylayout/Generic.kl
+      KeyCharacterMapFile: /system/usr/keychars/Generic.kcm
+      ConfigurationFile: 
+      HaveKeyboardLayoutOverlay: false
+      VideoDevice: <none>
+    2: kona-mtp-snd-card Headset Jack
+      Classes: 0x00000080
+      Path: /dev/input/event2
+      Enabled: true
+      Descriptor: 7190a2b9248fb4a34bd299c4148056d31c90b059
+      Location: ALSA
+      ControllerNumber: 0
+      UniqueId: 
+      Identifier: bus=0x0000, vendor=0x0000, product=0x0000, version=0x0000
+      KeyLayoutFile: 
+      KeyCharacterMapFile: 
+      ConfigurationFile: 
+      HaveKeyboardLayoutOverlay: false
+      VideoDevice: <none>
+    3: gpio-keys
+      Classes: 0x00000001
+      Path: /dev/input/event1
+      Enabled: true
+      Descriptor: 485d69228e24f5e46da1598745890b214130dbc4
+      Location: gpio-keys/input0
+      ControllerNumber: 0
+      UniqueId: 
+      Identifier: bus=0x0019, vendor=0x0001, product=0x0001, version=0x0100
+      KeyLayoutFile: /system/usr/keylayout/gpio-keys.kl
+      KeyCharacterMapFile: /system/usr/keychars/Generic.kcm
+      ConfigurationFile: 
+      HaveKeyboardLayoutOverlay: false
+      VideoDevice: <none>
+    4: qpnp_pon
+      Classes: 0x00000001
+      Path: /dev/input/event0
+      Enabled: true
+      Descriptor: fb60d4f4370f5dbe8267b63d38dea852987571ab
+      Location: qpnp_pon/input0
+      ControllerNumber: 0
+      UniqueId: 
+      Identifier: bus=0x0000, vendor=0x0000, product=0x0000, version=0x0000
+      KeyLayoutFile: /system/usr/keylayout/Generic.kl
+      KeyCharacterMapFile: /system/usr/keychars/Generic.kcm
+      ConfigurationFile: 
+      HaveKeyboardLayoutOverlay: false
+      VideoDevice: <none>
+    5: virtual_input_device
+      Classes: 0x00000065
+      Path: /dev/input/event4
+      Enabled: true
+      Descriptor: ea011df68d5e458fae3d98067e2d851a8bb4cac2
+      Location: 
+      ControllerNumber: 1
+      UniqueId: 
+      Identifier: bus=0x0006, vendor=0x1234, product=0x5678, version=0x0001
+      KeyLayoutFile: /system/usr/keylayout/Generic.kl
+      KeyCharacterMapFile: /system/usr/keychars/Generic.kcm
+      ConfigurationFile: 
+      HaveKeyboardLayoutOverlay: false
+      VideoDevice: <none>
+    6: pvr-virtual-input-0
+      Classes: 0x00000075
+      Path: /dev/input/event5
+      Enabled: true
+      Descriptor: d4fee7e41030deaf5e845066d323807921a0c37f
+      Location: 
+      ControllerNumber: 2
+      UniqueId: 
+      Identifier: bus=0x0006, vendor=0x0000, product=0x0000, version=0x0001
+      KeyLayoutFile: /system/usr/keylayout/Generic.kl
+      KeyCharacterMapFile: /system/usr/keychars/Generic.kcm
+      ConfigurationFile: /system/usr/idc/pvr-virtual-input-0.idc
+      HaveKeyboardLayoutOverlay: false
+      VideoDevice: <none>
+    7: pvr-virtual-input-1
+      Classes: 0x00000075
+      Path: /dev/input/event6
+      Enabled: true
+      Descriptor: 1686513d28d30caa1d8922d781e4580162d177e0
+      Location: 
+      ControllerNumber: 3
+      UniqueId: 
+      Identifier: bus=0x0006, vendor=0x0000, product=0x0000, version=0x0001
+      KeyLayoutFile: /system/usr/keylayout/Generic.kl
+      KeyCharacterMapFile: /system/usr/keychars/Generic.kcm
+      ConfigurationFile: /system/usr/idc/pvr-virtual-input-1.idc
+      HaveKeyboardLayoutOverlay: false
+      VideoDevice: <none>
+    8: pvr-virtual-input-2
+      Classes: 0x00000075
+      Path: /dev/input/event7
+      Enabled: true
+      Descriptor: acdc9b53ebb981397faf5c582898459ab7156ed0
+      Location: 
+      ControllerNumber: 4
+      UniqueId: 
+      Identifier: bus=0x0006, vendor=0x0000, product=0x0000, version=0x0001
+      KeyLayoutFile: /system/usr/keylayout/Generic.kl
+      KeyCharacterMapFile: /system/usr/keychars/Generic.kcm
+      ConfigurationFile: /system/usr/idc/pvr-virtual-input-2.idc
+      HaveKeyboardLayoutOverlay: false
+      VideoDevice: <none>
+    9: pvr-virtual-input-3
+      Classes: 0x00000075
+      Path: /dev/input/event8
+      Enabled: true
+      Descriptor: 7a4e868078cd11fd370f2c47fa31b9ce58db94a5
+      Location: 
+      ControllerNumber: 5
+      UniqueId: 
+      Identifier: bus=0x0006, vendor=0x0000, product=0x0000, version=0x0001
+      KeyLayoutFile: /system/usr/keylayout/Generic.kl
+      KeyCharacterMapFile: /system/usr/keychars/Generic.kcm
+      ConfigurationFile: 
+      HaveKeyboardLayoutOverlay: false
+      VideoDevice: <none>
+    10: pvr-virtual-input-4
+      Classes: 0x00000075
+      Path: /dev/input/event9
+      Enabled: true
+      Descriptor: 92bc92326b8de80a040cc70e817bf1d2ba463092
+      Location: 
+      ControllerNumber: 6
+      UniqueId: 
+      Identifier: bus=0x0006, vendor=0x0000, product=0x0000, version=0x0001
+      KeyLayoutFile: /system/usr/keylayout/Generic.kl
+      KeyCharacterMapFile: /system/usr/keychars/Generic.kcm
+      ConfigurationFile: 
+      HaveKeyboardLayoutOverlay: false
+      VideoDevice: <none>
+  Unattached video devices:
+    <none>
+
+Input Reader State:
+  Device -1: Virtual
+    Generation: 2
+    IsExternal: false
+    AssociatedDisplayPort: <none>
+    HasMic:     false
+    Sources: 0x00000301
+    KeyboardType: 2
+    Keyboard Input Mapper:
+      Parameters:
+        OrientationAware: false
+        HandlesKeyRepeat: false
+      KeyboardType: 2
+      Orientation: 0
+      KeyDowns: 0 keys currently down
+      MetaState: 0x0
+      DownTime: 0
+  Device 1: kona-mtp-snd-card Button Jack
+    Generation: 10
+    IsExternal: false
+    AssociatedDisplayPort: <none>
+    HasMic:     false
+    Sources: 0x00000101
+    KeyboardType: 1
+    Keyboard Input Mapper:
+      Parameters:
+        OrientationAware: false
+        HandlesKeyRepeat: false
+      KeyboardType: 1
+      Orientation: 0
+      KeyDowns: 0 keys currently down
+      MetaState: 0x0
+      DownTime: 0
+  Device 2: kona-mtp-snd-card Headset Jack
+    Generation: 8
+    IsExternal: false
+    AssociatedDisplayPort: <none>
+    HasMic:     false
+    Sources: 0x80000000
+    KeyboardType: 0
+    Switch Input Mapper:
+      SwitchValues: 0
+  Device 3: gpio-keys
+    Generation: 6
+    IsExternal: false
+    AssociatedDisplayPort: <none>
+    HasMic:     false
+    Sources: 0x00000101
+    KeyboardType: 1
+    Keyboard Input Mapper:
+      Parameters:
+        OrientationAware: false
+        HandlesKeyRepeat: false
+      KeyboardType: 1
+      Orientation: 0
+      KeyDowns: 0 keys currently down
+      MetaState: 0x0
+      DownTime: 0
+  Device 4: qpnp_pon
+    Generation: 4
+    IsExternal: false
+    AssociatedDisplayPort: <none>
+    HasMic:     false
+    Sources: 0x00000101
+    KeyboardType: 1
+    Keyboard Input Mapper:
+      Parameters:
+        OrientationAware: false
+        HandlesKeyRepeat: false
+      KeyboardType: 1
+      Orientation: 0
+      KeyDowns: 0 keys currently down
+      MetaState: 0x0
+      DownTime: 0
+  Device 5: virtual_input_device
+    Generation: 13
+    IsExternal: false
+    AssociatedDisplayPort: <none>
+    HasMic:     false
+    Sources: 0x00001703
+    KeyboardType: 1
+    Motion Ranges:
+      X: source=0x00001002, min=0.000, max=4319.000, flat=0.000, fuzz=0.000, resolution=0.000
+      Y: source=0x00001002, min=0.000, max=2159.000, flat=0.000, fuzz=0.000, resolution=0.000
+      PRESSURE: source=0x00001002, min=0.000, max=1.000, flat=0.000, fuzz=0.000, resolution=0.000
+    Keyboard Input Mapper:
+      Parameters:
+        OrientationAware: false
+        HandlesKeyRepeat: false
+      KeyboardType: 1
+      Orientation: 0
+      KeyDowns: 0 keys currently down
+      MetaState: 0x0
+      DownTime: 0
+    Touch Input Mapper (mode - direct):
+      Parameters:
+        GestureMode: multi-touch
+        DeviceType: touchScreen
+        AssociatedDisplay: hasAssociatedDisplay=true, isExternal=false, displayId=''
+        OrientationAware: true
+      Raw Touch Axes:
+        X: min=0, max=100000, flat=0, fuzz=0, resolution=0
+        Y: min=0, max=100000, flat=0, fuzz=0, resolution=0
+        Pressure: unknown range
+        TouchMajor: unknown range
+        TouchMinor: unknown range
+        ToolMajor: unknown range
+        ToolMinor: unknown range
+        Orientation: unknown range
+        Distance: unknown range
+        TiltX: unknown range
+        TiltY: unknown range
+        TrackingId: unknown range
+        Slot: unknown range
+      Calibration:
+        touch.size.calibration: none
+        touch.pressure.calibration: none
+        touch.orientation.calibration: none
+        touch.distance.calibration: none
+        touch.coverage.calibration: none
+      Affine Transformation:
+        X scale: 1.000
+        X ymix: 0.000
+        X offset: 0.000
+        Y xmix: 0.000
+        Y scale: 1.000
+        Y offset: 0.000
+      Viewport INTERNAL: displayId=0, uniqueId=local:19260920661076353, port=129, orientation=0, logicalFrame=[0, 0, 4320, 2160], physicalFrame=[0, 0, 4320, 2160], deviceSize=[4320, 2160]
+      SurfaceWidth: 4320px
+      SurfaceHeight: 2160px
+      SurfaceLeft: 0
+      SurfaceTop: 0
+      PhysicalWidth: 4320px
+      PhysicalHeight: 2160px
+      PhysicalLeft: 0
+      PhysicalTop: 0
+      SurfaceOrientation: 0
+      Translation and Scaling Factors:
+        XTranslate: 0.000
+        YTranslate: 0.000
+        XScale: 1.000
+        YScale: 1.000
+        XPrecision: 1.000
+        YPrecision: 1.000
+        GeometricScale: 1.000
+        PressureScale: 0.000
+        SizeScale: 0.000
+        OrientationScale: 0.000
+        DistanceScale: 0.000
+        HaveTilt: false
+        TiltXCenter: 0.000
+        TiltXScale: 0.000
+        TiltYCenter: 0.000
+        TiltYScale: 0.000
+      Last Raw Button State: 0x00000000
+      Last Raw Touch: pointerCount=0
+      Last Cooked Button State: 0x00000000
+      Last Cooked Touch: pointerCount=0
+      Stylus Fusion:
+        ExternalStylusConnected: false
+        External Stylus ID: -1
+        External Stylus Data Timeout: 9223372036854775807
+      External Stylus State:
+        When: 9223372036854775807
+        Pressure: 0.000000
+        Button State: 0x00000000
+        Tool Type: 0
+  Device 6: pvr-virtual-input-0
+    Generation: 23
+    IsExternal: false
+    AssociatedDisplayPort: <none>
+    HasMic:     false
+    Sources: 0x00001703
+    KeyboardType: 1
+    Motion Ranges:
+      X: source=0x00001002, min=0.000, max=4319.000, flat=0.000, fuzz=0.000, resolution=0.000
+      Y: source=0x00001002, min=0.000, max=2159.000, flat=0.000, fuzz=0.000, resolution=0.000
+      PRESSURE: source=0x00001002, min=0.000, max=1.000, flat=0.000, fuzz=0.000, resolution=0.000
+      VSCROLL: source=0x00001002, min=-1.000, max=1.000, flat=0.000, fuzz=0.000, resolution=0.000
+      HSCROLL: source=0x00001002, min=-1.000, max=1.000, flat=0.000, fuzz=0.000, resolution=0.000
+    Keyboard Input Mapper:
+      Parameters:
+        OrientationAware: false
+        HandlesKeyRepeat: false
+      KeyboardType: 1
+      Orientation: 0
+      KeyDowns: 0 keys currently down
+      MetaState: 0x0
+      DownTime: 0
+    Touch Input Mapper (mode - direct):
+      Parameters:
+        GestureMode: multi-touch
+        DeviceType: touchScreen
+        AssociatedDisplay: hasAssociatedDisplay=true, isExternal=false, displayId=''
+        OrientationAware: true
+      Raw Touch Axes:
+        X: min=0, max=32767, flat=0, fuzz=0, resolution=0
+        Y: min=0, max=32767, flat=0, fuzz=0, resolution=0
+        Pressure: min=0, max=255, flat=0, fuzz=0, resolution=0
+        TouchMajor: unknown range
+        TouchMinor: unknown range
+        ToolMajor: unknown range
+        ToolMinor: unknown range
+        Orientation: unknown range
+        Distance: unknown range
+        TiltX: unknown range
+        TiltY: unknown range
+        TrackingId: min=0, max=65535, flat=0, fuzz=0, resolution=0
+        Slot: min=0, max=9, flat=0, fuzz=0, resolution=0
+      Calibration:
+        touch.size.calibration: none
+        touch.pressure.calibration: physical
+        touch.orientation.calibration: none
+        touch.distance.calibration: none
+        touch.coverage.calibration: none
+      Affine Transformation:
+        X scale: 1.000
+        X ymix: 0.000
+        X offset: 0.000
+        Y xmix: 0.000
+        Y scale: 1.000
+        Y offset: 0.000
+      Viewport INTERNAL: displayId=0, uniqueId=local:19260920661076353, port=129, orientation=0, logicalFrame=[0, 0, 4320, 2160], physicalFrame=[0, 0, 4320, 2160], deviceSize=[4320, 2160]
+      SurfaceWidth: 4320px
+      SurfaceHeight: 2160px
+      SurfaceLeft: 0
+      SurfaceTop: 0
+      PhysicalWidth: 4320px
+      PhysicalHeight: 2160px
+      PhysicalLeft: 0
+      PhysicalTop: 0
+      SurfaceOrientation: 0
+      Translation and Scaling Factors:
+        XTranslate: 0.000
+        YTranslate: 0.000
+        XScale: 0.132
+        YScale: 0.066
+        XPrecision: 7.585
+        YPrecision: 15.170
+        GeometricScale: 0.099
+        PressureScale: 0.004
+        SizeScale: 0.000
+        OrientationScale: 0.000
+        DistanceScale: 0.000
+        HaveTilt: false
+        TiltXCenter: 0.000
+        TiltXScale: 0.000
+        TiltYCenter: 0.000
+        TiltYScale: 0.000
+      Last Raw Button State: 0x00000000
+      Last Raw Touch: pointerCount=3
+        [0]: id=0, x=6553, y=9830, pressure=256, touchMajor=0, touchMinor=0, toolMajor=0, toolMinor=0, orientation=0, tiltX=0, tiltY=0, distance=0, toolType=1, isHovering=false
+        [1]: id=2, x=8192, y=9830, pressure=0, touchMajor=0, touchMinor=0, toolMajor=0, toolMinor=0, orientation=0, tiltX=0, tiltY=0, distance=0, toolType=1, isHovering=true
+        [2]: id=1, x=8192, y=9830, pressure=256, touchMajor=0, touchMinor=0, toolMajor=0, toolMinor=0, orientation=0, tiltX=0, tiltY=0, distance=0, toolType=1, isHovering=false
+      Last Cooked Button State: 0x00000000
+      Last Cooked Touch: pointerCount=3
+        [0]: id=0, x=863.921, y=647.974, pressure=1.004, touchMajor=0.000, touchMinor=0.000, toolMajor=0.000, toolMinor=0.000, orientation=0.000, tilt=0.000, distance=0.000, toolType=1, isHovering=false
+        [1]: id=2, x=1080.000, y=647.974, pressure=0.000, touchMajor=0.000, touchMinor=0.000, toolMajor=0.000, toolMinor=0.000, orientation=0.000, tilt=0.000, distance=0.000, toolType=1, isHovering=true
+        [2]: id=1, x=1080.000, y=647.974, pressure=1.004, touchMajor=0.000, touchMinor=0.000, toolMajor=0.000, toolMinor=0.000, orientation=0.000, tilt=0.000, distance=0.000, toolType=1, isHovering=false
+      Stylus Fusion:
+        ExternalStylusConnected: false
+        External Stylus ID: -1
+        External Stylus Data Timeout: 9223372036854775807
+      External Stylus State:
+        When: 9223372036854775807
+        Pressure: 0.000000
+        Button State: 0x00000000
+        Tool Type: 0
+  Device 7: pvr-virtual-input-1
+    Generation: 20
+    IsExternal: false
+    AssociatedDisplayPort: <none>
+    HasMic:     false
+    Sources: 0x00001703
+    KeyboardType: 1
+    Keyboard Input Mapper:
+      Parameters:
+        OrientationAware: false
+        HandlesKeyRepeat: false
+      KeyboardType: 1
+      Orientation: 0
+      KeyDowns: 0 keys currently down
+      MetaState: 0x0
+      DownTime: 0
+    Touch Input Mapper (mode - disabled):
+      Parameters:
+        GestureMode: multi-touch
+        DeviceType: touchScreen
+        AssociatedDisplay: hasAssociatedDisplay=true, isExternal=false, displayId='virtual:com.pvr.vrshell:277f1a09-b88d-4d1e-8716-796f114d09cd'
+        OrientationAware: true
+      Raw Touch Axes:
+        X: min=0, max=32767, flat=0, fuzz=0, resolution=0
+        Y: min=0, max=32767, flat=0, fuzz=0, resolution=0
+        Pressure: min=0, max=255, flat=0, fuzz=0, resolution=0
+        TouchMajor: unknown range
+        TouchMinor: unknown range
+        ToolMajor: unknown range
+        ToolMinor: unknown range
+        Orientation: unknown range
+        Distance: unknown range
+        TiltX: unknown range
+        TiltY: unknown range
+        TrackingId: min=0, max=65535, flat=0, fuzz=0, resolution=0
+        Slot: min=0, max=9, flat=0, fuzz=0, resolution=0
+      Calibration:
+        touch.size.calibration: none
+        touch.pressure.calibration: physical
+        touch.orientation.calibration: none
+        touch.distance.calibration: none
+        touch.coverage.calibration: none
+      Affine Transformation:
+        X scale: 1.000
+        X ymix: 0.000
+        X offset: 0.000
+        Y xmix: 0.000
+        Y scale: 1.000
+        Y offset: 0.000
+      Viewport INTERNAL: displayId=-1, uniqueId=, port=<none>, orientation=0, logicalFrame=[0, 0, 0, 0], physicalFrame=[0, 0, 0, 0], deviceSize=[0, 0]
+      SurfaceWidth: -1px
+      SurfaceHeight: -1px
+      SurfaceLeft: 0
+      SurfaceTop: 0
+      PhysicalWidth: -1px
+      PhysicalHeight: -1px
+      PhysicalLeft: 0
+      PhysicalTop: 0
+      SurfaceOrientation: 0
+      Translation and Scaling Factors:
+        XTranslate: 0.000
+        YTranslate: 0.000
+        XScale: 0.000
+        YScale: 0.000
+        XPrecision: 0.000
+        YPrecision: 0.000
+        GeometricScale: 0.000
+        PressureScale: 0.000
+        SizeScale: 0.000
+        OrientationScale: 0.000
+        DistanceScale: 0.000
+        HaveTilt: false
+        TiltXCenter: 0.000
+        TiltXScale: 0.000
+        TiltYCenter: 0.000
+        TiltYScale: 0.000
+      Last Raw Button State: 0x00000000
+      Last Raw Touch: pointerCount=0
+      Last Cooked Button State: 0x00000000
+      Last Cooked Touch: pointerCount=0
+      Stylus Fusion:
+        ExternalStylusConnected: false
+        External Stylus ID: -1
+        External Stylus Data Timeout: 9223372036854775807
+      External Stylus State:
+        When: 9223372036854775807
+        Pressure: 0.000000
+        Button State: 0x00000000
+        Tool Type: 0
+  Device 8: pvr-virtual-input-2
+    Generation: 18
+    IsExternal: false
+    AssociatedDisplayPort: <none>
+    HasMic:     false
+    Sources: 0x00001703
+    KeyboardType: 1
+    Keyboard Input Mapper:
+      Parameters:
+        OrientationAware: false
+        HandlesKeyRepeat: false
+      KeyboardType: 1
+      Orientation: 0
+      KeyDowns: 0 keys currently down
+      MetaState: 0x0
+      DownTime: 0
+    Touch Input Mapper (mode - disabled):
+      Parameters:
+        GestureMode: multi-touch
+        DeviceType: touchScreen
+        AssociatedDisplay: hasAssociatedDisplay=true, isExternal=false, displayId='virtual:com.pvr.socialhome:pvr-social-home-01'
+        OrientationAware: true
+      Raw Touch Axes:
+        X: min=0, max=32767, flat=0, fuzz=0, resolution=0
+        Y: min=0, max=32767, flat=0, fuzz=0, resolution=0
+        Pressure: min=0, max=255, flat=0, fuzz=0, resolution=0
+        TouchMajor: unknown range
+        TouchMinor: unknown range
+        ToolMajor: unknown range
+        ToolMinor: unknown range
+        Orientation: unknown range
+        Distance: unknown range
+        TiltX: unknown range
+        TiltY: unknown range
+        TrackingId: min=0, max=65535, flat=0, fuzz=0, resolution=0
+        Slot: min=0, max=9, flat=0, fuzz=0, resolution=0
+      Calibration:
+        touch.size.calibration: none
+        touch.pressure.calibration: physical
+        touch.orientation.calibration: none
+        touch.distance.calibration: none
+        touch.coverage.calibration: none
+      Affine Transformation:
+        X scale: 1.000
+        X ymix: 0.000
+        X offset: 0.000
+        Y xmix: 0.000
+        Y scale: 1.000
+        Y offset: 0.000
+      Viewport INTERNAL: displayId=-1, uniqueId=, port=<none>, orientation=0, logicalFrame=[0, 0, 0, 0], physicalFrame=[0, 0, 0, 0], deviceSize=[0, 0]
+      SurfaceWidth: -1px
+      SurfaceHeight: -1px
+      SurfaceLeft: 0
+      SurfaceTop: 0
+      PhysicalWidth: -1px
+      PhysicalHeight: -1px
+      PhysicalLeft: 0
+      PhysicalTop: 0
+      SurfaceOrientation: 0
+      Translation and Scaling Factors:
+        XTranslate: 0.000
+        YTranslate: 0.000
+        XScale: 0.000
+        YScale: 0.000
+        XPrecision: 0.000
+        YPrecision: 0.000
+        GeometricScale: 0.000
+        PressureScale: 0.000
+        SizeScale: 0.000
+        OrientationScale: 0.000
+        DistanceScale: 0.000
+        HaveTilt: false
+        TiltXCenter: 0.000
+        TiltXScale: 0.000
+        TiltYCenter: 0.000
+        TiltYScale: 0.000
+      Last Raw Button State: 0x00000000
+      Last Raw Touch: pointerCount=0
+      Last Cooked Button State: 0x00000000
+      Last Cooked Touch: pointerCount=0
+      Stylus Fusion:
+        ExternalStylusConnected: false
+        External Stylus ID: -1
+        External Stylus Data Timeout: 9223372036854775807
+      External Stylus State:
+        When: 9223372036854775807
+        Pressure: 0.000000
+        Button State: 0x00000000
+        Tool Type: 0
+  Device 9: pvr-virtual-input-3
+    Generation: 16
+    IsExternal: false
+    AssociatedDisplayPort: <none>
+    HasMic:     false
+    Sources: 0x00001703
+    KeyboardType: 1
+    Motion Ranges:
+      X: source=0x00001002, min=0.000, max=4319.000, flat=0.000, fuzz=0.000, resolution=0.000
+      Y: source=0x00001002, min=0.000, max=2159.000, flat=0.000, fuzz=0.000, resolution=0.000
+      PRESSURE: source=0x00001002, min=0.000, max=1.000, flat=0.000, fuzz=0.000, resolution=0.000
+      VSCROLL: source=0x00001002, min=-1.000, max=1.000, flat=0.000, fuzz=0.000, resolution=0.000
+      HSCROLL: source=0x00001002, min=-1.000, max=1.000, flat=0.000, fuzz=0.000, resolution=0.000
+    Keyboard Input Mapper:
+      Parameters:
+        OrientationAware: false
+        HandlesKeyRepeat: false
+      KeyboardType: 1
+      Orientation: 0
+      KeyDowns: 0 keys currently down
+      MetaState: 0x0
+      DownTime: 0
+    Touch Input Mapper (mode - direct):
+      Parameters:
+        GestureMode: multi-touch
+        DeviceType: touchScreen
+        AssociatedDisplay: hasAssociatedDisplay=true, isExternal=false, displayId=''
+        OrientationAware: true
+      Raw Touch Axes:
+        X: min=0, max=32767, flat=0, fuzz=0, resolution=0
+        Y: min=0, max=32767, flat=0, fuzz=0, resolution=0
+        Pressure: min=0, max=255, flat=0, fuzz=0, resolution=0
+        TouchMajor: unknown range
+        TouchMinor: unknown range
+        ToolMajor: unknown range
+        ToolMinor: unknown range
+        Orientation: unknown range
+        Distance: unknown range
+        TiltX: unknown range
+        TiltY: unknown range
+        TrackingId: min=0, max=65535, flat=0, fuzz=0, resolution=0
+        Slot: min=0, max=9, flat=0, fuzz=0, resolution=0
+      Calibration:
+        touch.size.calibration: none
+        touch.pressure.calibration: physical
+        touch.orientation.calibration: none
+        touch.distance.calibration: none
+        touch.coverage.calibration: none
+      Affine Transformation:
+        X scale: 1.000
+        X ymix: 0.000
+        X offset: 0.000
+        Y xmix: 0.000
+        Y scale: 1.000
+        Y offset: 0.000
+      Viewport INTERNAL: displayId=0, uniqueId=local:19260920661076353, port=129, orientation=0, logicalFrame=[0, 0, 4320, 2160], physicalFrame=[0, 0, 4320, 2160], deviceSize=[4320, 2160]
+      SurfaceWidth: 4320px
+      SurfaceHeight: 2160px
+      SurfaceLeft: 0
+      SurfaceTop: 0
+      PhysicalWidth: 4320px
+      PhysicalHeight: 2160px
+      PhysicalLeft: 0
+      PhysicalTop: 0
+      SurfaceOrientation: 0
+      Translation and Scaling Factors:
+        XTranslate: 0.000
+        YTranslate: 0.000
+        XScale: 0.132
+        YScale: 0.066
+        XPrecision: 7.585
+        YPrecision: 15.170
+        GeometricScale: 0.099
+        PressureScale: 0.004
+        SizeScale: 0.000
+        OrientationScale: 0.000
+        DistanceScale: 0.000
+        HaveTilt: false
+        TiltXCenter: 0.000
+        TiltXScale: 0.000
+        TiltYCenter: 0.000
+        TiltYScale: 0.000
+      Last Raw Button State: 0x00000000
+      Last Raw Touch: pointerCount=0
+      Last Cooked Button State: 0x00000000
+      Last Cooked Touch: pointerCount=0
+      Stylus Fusion:
+        ExternalStylusConnected: false
+        External Stylus ID: -1
+        External Stylus Data Timeout: 9223372036854775807
+      External Stylus State:
+        When: 9223372036854775807
+        Pressure: 0.000000
+        Button State: 0x00000000
+        Tool Type: 0
+  Device 10: pvr-virtual-input-4
+    Generation: 26
+    IsExternal: false
+    AssociatedDisplayPort: <none>
+    HasMic:     false
+    Sources: 0x00001703
+    KeyboardType: 1
+    Motion Ranges:
+      X: source=0x00001002, min=0.000, max=4319.000, flat=0.000, fuzz=0.000, resolution=0.000
+      Y: source=0x00001002, min=0.000, max=2159.000, flat=0.000, fuzz=0.000, resolution=0.000
+      PRESSURE: source=0x00001002, min=0.000, max=1.000, flat=0.000, fuzz=0.000, resolution=0.000
+      VSCROLL: source=0x00001002, min=-1.000, max=1.000, flat=0.000, fuzz=0.000, resolution=0.000
+      HSCROLL: source=0x00001002, min=-1.000, max=1.000, flat=0.000, fuzz=0.000, resolution=0.000
+    Keyboard Input Mapper:
+      Parameters:
+        OrientationAware: false
+        HandlesKeyRepeat: false
+      KeyboardType: 1
+      Orientation: 0
+      KeyDowns: 0 keys currently down
+      MetaState: 0x0
+      DownTime: 0
+    Touch Input Mapper (mode - direct):
+      Parameters:
+        GestureMode: multi-touch
+        DeviceType: touchScreen
+        AssociatedDisplay: hasAssociatedDisplay=true, isExternal=false, displayId=''
+        OrientationAware: true
+      Raw Touch Axes:
+        X: min=0, max=32767, flat=0, fuzz=0, resolution=0
+        Y: min=0, max=32767, flat=0, fuzz=0, resolution=0
+        Pressure: min=0, max=255, flat=0, fuzz=0, resolution=0
+        TouchMajor: unknown range
+        TouchMinor: unknown range
+        ToolMajor: unknown range
+        ToolMinor: unknown range
+        Orientation: unknown range
+        Distance: unknown range
+        TiltX: unknown range
+        TiltY: unknown range
+        TrackingId: min=0, max=65535, flat=0, fuzz=0, resolution=0
+        Slot: min=0, max=9, flat=0, fuzz=0, resolution=0
+      Calibration:
+        touch.size.calibration: none
+        touch.pressure.calibration: physical
+        touch.orientation.calibration: none
+        touch.distance.calibration: none
+        touch.coverage.calibration: none
+      Affine Transformation:
+        X scale: 1.000
+        X ymix: 0.000
+        X offset: 0.000
+        Y xmix: 0.000
+        Y scale: 1.000
+        Y offset: 0.000
+      Viewport INTERNAL: displayId=0, uniqueId=local:19260920661076353, port=129, orientation=0, logicalFrame=[0, 0, 4320, 2160], physicalFrame=[0, 0, 4320, 2160], deviceSize=[4320, 2160]
+      SurfaceWidth: 4320px
+      SurfaceHeight: 2160px
+      SurfaceLeft: 0
+      SurfaceTop: 0
+      PhysicalWidth: 4320px
+      PhysicalHeight: 2160px
+      PhysicalLeft: 0
+      PhysicalTop: 0
+      SurfaceOrientation: 0
+      Translation and Scaling Factors:
+        XTranslate: 0.000
+        YTranslate: 0.000
+        XScale: 0.132
+        YScale: 0.066
+        XPrecision: 7.585
+        YPrecision: 15.170
+        GeometricScale: 0.099
+        PressureScale: 0.004
+        SizeScale: 0.000
+        OrientationScale: 0.000
+        DistanceScale: 0.000
+        HaveTilt: false
+        TiltXCenter: 0.000
+        TiltXScale: 0.000
+        TiltYCenter: 0.000
+        TiltYScale: 0.000
+      Last Raw Button State: 0x00000000
+      Last Raw Touch: pointerCount=0
+      Last Cooked Button State: 0x00000000
+      Last Cooked Touch: pointerCount=0
+      Stylus Fusion:
+        ExternalStylusConnected: false
+        External Stylus ID: -1
+        External Stylus Data Timeout: 9223372036854775807
+      External Stylus State:
+        When: 9223372036854775807
+        Pressure: 0.000000
+        Button State: 0x00000000
+        Tool Type: 0
+  Configuration:
+    ExcludedDeviceNames: [qti-haptics]
+    VirtualKeyQuietTime: 0.0ms
+    PointerVelocityControlParameters: scale=1.000, lowThreshold=500.000, highThreshold=3000.000, acceleration=3.000
+    WheelVelocityControlParameters: scale=1.000, lowThreshold=15.000, highThreshold=50.000, acceleration=4.000
+    PointerGesture:
+      Enabled: true
+      QuietInterval: 100.0ms
+      DragMinSwitchSpeed: 50.0px/s
+      TapInterval: 150.0ms
+      TapDragInterval: 300.0ms
+      TapSlop: 20.0px
+      MultitouchSettleInterval: 100.0ms
+      MultitouchMinDistance: 15.0px
+      SwipeTransitionAngleCosine: 0.3
+      SwipeMaxWidthRatio: 0.2
+      MovementSpeedRatio: 0.8
+      ZoomSpeedRatio: 0.3
+      Viewports:
+        Viewport INTERNAL: displayId=0, uniqueId=local:19260920661076353, port=129, orientation=0, logicalFrame=[0, 0, 4320, 2160], physicalFrame=[0, 0, 4320, 2160], deviceSize=[4320, 2160]
+        Viewport VIRTUAL: displayId=1, uniqueId=virtual:com.picovr.systemext,1000,NS_INPUT_METHOD,0, port=<none>, orientation=0, logicalFrame=[0, 0, 1045, 460], physicalFrame=[0, 0, 1045, 460], deviceSize=[1045, 460]
+        Viewport VIRTUAL: displayId=2, uniqueId=virtual:com.picovr.systemext,1000,GlobalUI,0, port=<none>, orientation=0, logicalFrame=[0, 0, 4320, 4320], physicalFrame=[0, 0, 4320, 4320], deviceSize=[4320, 4320]
+        Viewport VIRTUAL: displayId=3, uniqueId=virtual:com.picovr.systemext,1000,NS_WINDOW_short_cut,0, port=<none>, orientation=0, logicalFrame=[0, 0, 2250, 205], physicalFrame=[0, 0, 2250, 205], deviceSize=[2250, 205]
+        Viewport VIRTUAL: displayId=4, uniqueId=virtual:com.picovr.systemext,1000,NS_APP[com.pvr.home],0, port=<none>, orientation=0, logicalFrame=[0, 0, 2102, 902], physicalFrame=[0, 0, 2102, 902], deviceSize=[2102, 902]
+        Viewport VIRTUAL: displayId=5, uniqueId=virtual:com.picovr.systemext,1000,NS_CAPTION_BAR_[鎺ㄨ崘],0, port=<none>, orientation=0, logicalFrame=[0, 0, 413, 250], physicalFrame=[0, 0, 413, 250], deviceSize=[413, 250]
+
+Input Classifier State:
+  Motion Classifier:
+    <nullptr>
+
+Input Dispatcher State:
+  DispatchEnabled: true
+  DispatchFrozen: false
+  InputFilterEnabled: false
+  FocusedDisplayId: 0
+  FocusedApplications:
+    displayId=4, name='AppWindowToken{9e78105 token=Token{ada247c ActivityRecord{8b4ca76 u0 com.pvr.home/.RecActivity t130}}}', dispatchingTimeout=5000.000ms
+    displayId=0, name='AppWindowToken{9619793 token=Token{9576482 ActivityRecord{1999f91 u0 com.pvr.vrshell/.MainActivity t129}}}', dispatchingTimeout=5000.000ms
+  FocusedWindows:
+    displayId=0, name='Window{5071ce u0 com.pvr.vrshell/com.pvr.vrshell.MainActivity}'
+  TouchStates: <no displays touched>
+  Display: 4
+    Windows:
+      0: name='Window{616447d u0 com.pvr.home/com.pvr.home.RecActivity}', displayId=4, portalToDisplayId=-1, paused=false, hasFocus=false, hasWallpaper=true, visible=false, canReceiveKeys=true, flags=0x81910520, type=0x00000001, layer=0, frame=[1,1][2101,901], globalScale=1.000000, windowScale=(1.000000,1.000000), touchableRegion=[0,0][2102,902], inputFeatures=0x00000000, ownerPid=3128, ownerUid=1000, dispatchingTimeout=5000.000ms
+  Display: 3
+    Windows:
+      0: name='Window{c5afa40 u0 ns_container_short_cut}', displayId=3, portalToDisplayId=-1, paused=false, hasFocus=false, hasWallpaper=false, visible=true, canReceiveKeys=false, flags=0x81810508, type=0x000007ee, layer=0, frame=[0,0][2250,205], globalScale=1.000000, windowScale=(1.000000,1.000000), touchableRegion=[0,0][2250,205], inputFeatures=0x00000000, ownerPid=3089, ownerUid=1000, dispatchingTimeout=5000.000ms
+  Display: 0
+    Windows:
+      0: name='Window{5071ce u0 com.pvr.vrshell/com.pvr.vrshell.MainActivity}', displayId=0, portalToDisplayId=-1, paused=false, hasFocus=true, hasWallpaper=false, visible=true, canReceiveKeys=true, flags=0x008105a0, type=0x00000001, layer=0, frame=[2159,1079][2160,1080], globalScale=1.000000, windowScale=(1.000000,1.000000), touchableRegion=[0,0][4320,2160], inputFeatures=0x00000000, ownerPid=2835, ownerUid=1000, dispatchingTimeout=5000.000ms
+  Global monitors in display 5:
+    0: 'PointerEventDispatcher5 (server)', 
+  Global monitors in display 4:
+    0: 'PointerEventDispatcher4 (server)', 
+  Global monitors in display 3:
+    0: 'PointerEventDispatcher3 (server)', 
+  Global monitors in display 2:
+    0: 'PointerEventDispatcher2 (server)', 
+  Global monitors in display 1:
+    0: 'PointerEventDispatcher1 (server)', 
+  Global monitors in display 0:
+    0: 'PointerEventDispatcher0 (server)', 
+  RecentQueue: length=10
+    DeviceResetEvent(deviceId=6), policyFlags=0x00000000, age=959964.6ms
+    ConfigurationChangedEvent(), policyFlags=0x00000000, age=959964.6ms
+    DeviceResetEvent(deviceId=10), policyFlags=0x00000000, age=959962.2ms
+    ConfigurationChangedEvent(), policyFlags=0x00000000, age=959962.2ms
+    MotionEvent, age=60655.9ms
+    MotionEvent, age=57352.8ms
+    MotionEvent, age=57047.6ms
+    MotionEvent, age=50050.0ms
+    MotionEvent, age=46748.4ms
+    MotionEvent, age=46444.5ms
+  PendingEvent: <none>
+  InboundQueue: <empty>
+  ReplacedKeys: <empty>
+  Connections:
+    0: channelName='PointerEventDispatcher0 (server)', windowName='PointerEventDispatcher0 (server)', status=NORMAL, monitor=true, inputPublisherBlocked=false
+      OutboundQueue: <empty>
+      WaitQueue: <empty>
+    1: channelName='PointerEventDispatcher1 (server)', windowName='PointerEventDispatcher1 (server)', status=NORMAL, monitor=true, inputPublisherBlocked=false
+      OutboundQueue: <empty>
+      WaitQueue: <empty>
+    2: channelName='PointerEventDispatcher2 (server)', windowName='PointerEventDispatcher2 (server)', status=NORMAL, monitor=true, inputPublisherBlocked=false
+      OutboundQueue: <empty>
+      WaitQueue: <empty>
+    3: channelName='616447d com.pvr.home/com.pvr.home.RecActivity (server)', windowName='616447d com.pvr.home/com.pvr.home.RecActivity (server)', status=NORMAL, monitor=false, inputPublisherBlocked=false
+      OutboundQueue: <empty>
+      WaitQueue: <empty>
+    4: channelName='c5afa40 ns_container_short_cut (server)', windowName='c5afa40 ns_container_short_cut (server)', status=NORMAL, monitor=false, inputPublisherBlocked=false
+      OutboundQueue: <empty>
+      WaitQueue: <empty>
+    5: channelName='PointerEventDispatcher4 (server)', windowName='PointerEventDispatcher4 (server)', status=NORMAL, monitor=true, inputPublisherBlocked=false
+      OutboundQueue: <empty>
+      WaitQueue: <empty>
+    6: channelName='PointerEventDispatcher5 (server)', windowName='PointerEventDispatcher5 (server)', status=NORMAL, monitor=true, inputPublisherBlocked=false
+      OutboundQueue: <empty>
+      WaitQueue: <empty>
+    7: channelName='5071ce com.pvr.vrshell/com.pvr.vrshell.MainActivity (server)', windowName='5071ce com.pvr.vrshell/com.pvr.vrshell.MainActivity (server)', status=NORMAL, monitor=false, inputPublisherBlocked=false
+      OutboundQueue: <empty>
+      WaitQueue: <empty>
+    8: channelName='PointerEventDispatcher3 (server)', windowName='PointerEventDispatcher3 (server)', status=NORMAL, monitor=true, inputPublisherBlocked=false
+      OutboundQueue: <empty>
+      WaitQueue: <empty>
+    9: channelName='8508b47 CAPTION_BAR[鎺ㄨ崘] (server)', windowName='8508b47 CAPTION_BAR[鎺ㄨ崘] (server)', status=NORMAL, monitor=false, inputPublisherBlocked=false
+      OutboundQueue: <empty>
+      WaitQueue: <empty>
+  AppSwitch: not pending
+  Configuration:
+    KeyRepeatDelay: 50.0ms
+    KeyRepeatTimeout: 400.0ms
+
+

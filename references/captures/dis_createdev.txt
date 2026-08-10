@@ -1,0 +1,197 @@
+﻿===== create_device (0x1f24fc..0x1f27f4) =====
+
+/mnt/c/Users/wzy/.openclaw/workspace/pico4/mt/libxrshell.so:	file format elf64-littleaarch64
+
+Disassembly of section .text:
+
+00000000001f24fc <_Z13create_devicev>:
+  1f24fc: a9bb7bfd     	stp	x29, x30, [sp, #-0x50]!
+  1f2500: f9000bfc     	str	x28, [sp, #0x10]
+  1f2504: 910003fd     	mov	x29, sp
+  1f2508: a9025ff8     	stp	x24, x23, [sp, #0x20]
+  1f250c: a90357f6     	stp	x22, x21, [sp, #0x30]
+  1f2510: a9044ff4     	stp	x20, x19, [sp, #0x40]
+  1f2514: d111c3ff     	sub	sp, sp, #0x470
+  1f2518: d53bd056     	mrs	x22, TPIDR_EL0
+  1f251c: f0fff960     	adrp	x0, 0x121000 <_ZTS17SoundEffectAction+0x1b1f>
+  1f2520: f94016c8     	ldr	x8, [x22, #0x28]
+  1f2524: 91353400     	add	x0, x0, #0xd4d
+  1f2528: 52810021     	mov	w1, #0x801              // =2049
+  1f252c: f81f83a8     	stur	x8, [x29, #-0x8]
+  1f2530: 94056350     	bl	0x34b270 <__open_2@plt>
+  1f2534: 2a0003f3     	mov	w19, w0
+  1f2538: 37f81060     	tbnz	w0, #0x1f, 0x1f2744 <_Z13create_devicev+0x248>
+  1f253c: 910023e0     	add	x0, sp, #0x8
+  1f2540: 2a1f03e1     	mov	w1, wzr
+  1f2544: 52808b82     	mov	w2, #0x45c              // =1116
+  1f2548: 528aac97     	mov	w23, #0x5564            // =21860
+  1f254c: 72a80097     	movk	w23, #0x4004, lsl #16
+  1f2550: 940557f8     	bl	0x348530 <memset@plt>
+  1f2554: f0fff961     	adrp	x1, 0x121000 <_ZTS17SoundEffectAction+0x1b1f>
+  1f2558: 910023e0     	add	x0, sp, #0x8
+  1f255c: 9119b021     	add	x1, x1, #0x66c
+  1f2560: 52800a02     	mov	w2, #0x50               // =80
+  1f2564: 52800a03     	mov	w3, #0x50               // =80
+  1f2568: 528002a4     	mov	w4, #0x15               // =21
+  1f256c: 94055acd     	bl	0x3490a0 <__strncpy_chk2@plt>
+  1f2570: b0fff968     	adrp	x8, 0x11f000
+  1f2574: 528aac81     	mov	w1, #0x5564             // =21860
+  1f2578: 2a1303e0     	mov	w0, w19
+  1f257c: 72a80081     	movk	w1, #0x4004, lsl #16
+  1f2580: 52800022     	mov	w2, #0x1                // =1
+  1f2584: fd438900     	ldr	d0, [x8, #0x710]
+  1f2588: fd002fe0     	str	d0, [sp, #0x58]
+  1f258c: 9405633d     	bl	0x34b280 <ioctl@plt>
+  1f2590: f0000ba8     	adrp	x8, 0x369000 <_ZGVZN7XRShell5Utils9SingletonI12PanelManagerE11getInstanceEvE8instance+0x98>
+  1f2594: 9125c108     	add	x8, x8, #0x970
+  1f2598: f8408515     	ldr	x21, [x8], #0x8
+  1f259c: eb0802bf     	cmp	x21, x8
+  1f25a0: 540003a0     	b.eq	0x1f2614 <_Z13create_devicev+0x118>
+  1f25a4: f0000bb4     	adrp	x20, 0x369000 <_ZGVZN7XRShell5Utils9SingletonI12PanelManagerE11getInstanceEvE8instance+0x98>
+  1f25a8: 9125e294     	add	x20, x20, #0x978
+  1f25ac: 14000004     	b	0x1f25bc <_Z13create_devicev+0xc0>
+  1f25b0: aa0903f5     	mov	x21, x9
+  1f25b4: eb1402bf     	cmp	x21, x20
+  1f25b8: 540002e0     	b.eq	0x1f2614 <_Z13create_devicev+0x118>
+  1f25bc: b94022a2     	ldr	w2, [x21, #0x20]
+  1f25c0: 110006e1     	add	w1, w23, #0x1
+  1f25c4: 2a1303e0     	mov	w0, w19
+  1f25c8: 9405632e     	bl	0x34b280 <ioctl@plt>
+  1f25cc: f94006a8     	ldr	x8, [x21, #0x8]
+  1f25d0: b40000a8     	cbz	x8, 0x1f25e4 <_Z13create_devicev+0xe8>
+  1f25d4: aa0803f5     	mov	x21, x8
+  1f25d8: f9400108     	ldr	x8, [x8]
+  1f25dc: b5ffffc8     	cbnz	x8, 0x1f25d4 <_Z13create_devicev+0xd8>
+  1f25e0: 17fffff5     	b	0x1f25b4 <_Z13create_devicev+0xb8>
+  1f25e4: aa1503e8     	mov	x8, x21
+  1f25e8: f8410d09     	ldr	x9, [x8, #0x10]!
+  1f25ec: f940012a     	ldr	x10, [x9]
+  1f25f0: eb15015f     	cmp	x10, x21
+  1f25f4: 54fffde0     	b.eq	0x1f25b0 <_Z13create_devicev+0xb4>
+  1f25f8: f9400109     	ldr	x9, [x8]
+  1f25fc: aa0903e8     	mov	x8, x9
+  1f2600: f8410d15     	ldr	x21, [x8, #0x10]!
+  1f2604: f94002aa     	ldr	x10, [x21]
+  1f2608: eb09015f     	cmp	x10, x9
+  1f260c: 54ffff61     	b.ne	0x1f25f8 <_Z13create_devicev+0xfc>
+  1f2610: 17ffffe9     	b	0x1f25b4 <_Z13create_devicev+0xb8>
+  1f2614: 110006f4     	add	w20, w23, #0x1
+  1f2618: 2a1303e0     	mov	w0, w19
+  1f261c: 2a1403e1     	mov	w1, w20
+  1f2620: 52802942     	mov	w2, #0x14a              // =330
+  1f2624: 94056317     	bl	0x34b280 <ioctl@plt>
+  1f2628: 528aac81     	mov	w1, #0x5564             // =21860
+  1f262c: 2a1303e0     	mov	w0, w19
+  1f2630: 72a80081     	movk	w1, #0x4004, lsl #16
+  1f2634: 52800062     	mov	w2, #0x3                // =3
+  1f2638: 94056312     	bl	0x34b280 <ioctl@plt>
+  1f263c: 11000ef5     	add	w21, w23, #0x3
+  1f2640: 2a1303e0     	mov	w0, w19
+  1f2644: 2a1503e1     	mov	w1, w21
+  1f2648: 2a1f03e2     	mov	w2, wzr
+  1f264c: 9405630d     	bl	0x34b280 <ioctl@plt>
+  1f2650: 5290d418     	mov	w24, #0x86a0            // =34464
+  1f2654: 2a1303e0     	mov	w0, w19
+  1f2658: 72a00038     	movk	w24, #0x1, lsl #16
+  1f265c: 2a1503e1     	mov	w1, w21
+  1f2660: 52800022     	mov	w2, #0x1                // =1
+  1f2664: b90267ff     	str	wzr, [sp, #0x264]
+  1f2668: b90167ff     	str	wzr, [sp, #0x164]
+  1f266c: b90067f8     	str	w24, [sp, #0x64]
+  1f2670: b90367ff     	str	wzr, [sp, #0x364]
+  1f2674: 94056303     	bl	0x34b280 <ioctl@plt>
+  1f2678: 2a1303e0     	mov	w0, w19
+  1f267c: 2a1403e1     	mov	w1, w20
+  1f2680: 528028a2     	mov	w2, #0x145              // =325
+  1f2684: b9016bff     	str	wzr, [sp, #0x168]
+  1f2688: b9006bf8     	str	w24, [sp, #0x68]
+  1f268c: b9026bff     	str	wzr, [sp, #0x268]
+  1f2690: b9036bff     	str	wzr, [sp, #0x368]
+  1f2694: 940562fb     	bl	0x34b280 <ioctl@plt>
+  1f2698: 528aac81     	mov	w1, #0x5564             // =21860
+  1f269c: 2a1303e0     	mov	w0, w19
+  1f26a0: 72a80081     	movk	w1, #0x4004, lsl #16
+  1f26a4: 52800082     	mov	w2, #0x4                // =4
+  1f26a8: 940562f6     	bl	0x34b280 <ioctl@plt>
+  1f26ac: 110012f4     	add	w20, w23, #0x4
+  1f26b0: 2a1303e0     	mov	w0, w19
+  1f26b4: 2a1403e1     	mov	w1, w20
+  1f26b8: 2a1f03e2     	mov	w2, wzr
+  1f26bc: 940562f1     	bl	0x34b280 <ioctl@plt>
+  1f26c0: 2a1303e0     	mov	w0, w19
+  1f26c4: 2a1403e1     	mov	w1, w20
+  1f26c8: 52800022     	mov	w2, #0x1                // =1
+  1f26cc: 940562ed     	bl	0x34b280 <ioctl@plt>
+  1f26d0: 2a1303e0     	mov	w0, w19
+  1f26d4: 2a1403e1     	mov	w1, w20
+  1f26d8: 52800042     	mov	w2, #0x2                // =2
+  1f26dc: 940562e9     	bl	0x34b280 <ioctl@plt>
+  1f26e0: 11002ae1     	add	w1, w23, #0xa
+  1f26e4: 2a1303e0     	mov	w0, w19
+  1f26e8: 52800022     	mov	w2, #0x1                // =1
+  1f26ec: 940562e5     	bl	0x34b280 <ioctl@plt>
+  1f26f0: 910023e1     	add	x1, sp, #0x8
+  1f26f4: 2a1303e0     	mov	w0, w19
+  1f26f8: 52808b82     	mov	w2, #0x45c              // =1116
+  1f26fc: 940562d1     	bl	0x34b240 <write@plt>
+  1f2700: 2a1303e0     	mov	w0, w19
+  1f2704: 528aa021     	mov	w1, #0x5501             // =21761
+  1f2708: 940562de     	bl	0x34b280 <ioctl@plt>
+  1f270c: 37f803a0     	tbnz	w0, #0x1f, 0x1f2780 <_Z13create_devicev+0x284>
+  1f2710: d0000b68     	adrp	x8, 0x360000 <_ZTVSt12out_of_range+0x18>
+  1f2714: f9437908     	ldr	x8, [x8, #0x6f0]
+  1f2718: b9400108     	ldr	w8, [x8]
+  1f271c: 7100111f     	cmp	w8, #0x4
+  1f2720: 5400050c     	b.gt	0x1f27c0 <_Z13create_devicev+0x2c4>
+  1f2724: 90fff9c1     	adrp	x1, 0x12a000 <_ZTS17SoundEffectAction+0xab1f>
+  1f2728: f0fff962     	adrp	x2, 0x121000 <_ZTS17SoundEffectAction+0x1b1f>
+  1f272c: 9136cc21     	add	x1, x1, #0xdb3
+  1f2730: 911a0442     	add	x2, x2, #0x681
+  1f2734: 52800080     	mov	w0, #0x4                // =4
+  1f2738: 2a1303e3     	mov	w3, w19
+  1f273c: 94055581     	bl	0x347d40 <__android_log_print@plt>
+  1f2740: 14000020     	b	0x1f27c0 <_Z13create_devicev+0x2c4>
+  1f2744: d0000b68     	adrp	x8, 0x360000 <_ZTVSt12out_of_range+0x18>
+  1f2748: f9437908     	ldr	x8, [x8, #0x6f0]
+  1f274c: b9400108     	ldr	w8, [x8]
+  1f2750: 7100191f     	cmp	w8, #0x6
+  1f2754: 5400034c     	b.gt	0x1f27bc <_Z13create_devicev+0x2c0>
+  1f2758: 9405568e     	bl	0x348190 <__errno@plt>
+  1f275c: 90fff9c1     	adrp	x1, 0x12a000 <_ZTS17SoundEffectAction+0xab1f>
+  1f2760: b0fff9c2     	adrp	x2, 0x12b000 <_ZTS17SoundEffectAction+0xbb1f>
+  1f2764: b9400004     	ldr	w4, [x0]
+  1f2768: 9136cc21     	add	x1, x1, #0xdb3
+  1f276c: 91036042     	add	x2, x2, #0xd8
+  1f2770: 528000c0     	mov	w0, #0x6                // =6
+  1f2774: 2a1303e3     	mov	w3, w19
+  1f2778: 94055572     	bl	0x347d40 <__android_log_print@plt>
+  1f277c: 14000010     	b	0x1f27bc <_Z13create_devicev+0x2c0>
+  1f2780: 2a0003f4     	mov	w20, w0
+  1f2784: 2a1303e0     	mov	w0, w19
+  1f2788: 940562c2     	bl	0x34b290 <close@plt>
+  1f278c: d0000b68     	adrp	x8, 0x360000 <_ZTVSt12out_of_range+0x18>
+  1f2790: f9437908     	ldr	x8, [x8, #0x6f0]
+  1f2794: b9400108     	ldr	w8, [x8]
+  1f2798: 7100191f     	cmp	w8, #0x6
+  1f279c: 5400010c     	b.gt	0x1f27bc <_Z13create_devicev+0x2c0>
+  1f27a0: 90fff9c1     	adrp	x1, 0x12a000 <_ZTS17SoundEffectAction+0xab1f>
+  1f27a4: d0fff982     	adrp	x2, 0x124000 <_ZTS17SoundEffectAction+0x4b1f>
+  1f27a8: 9136cc21     	add	x1, x1, #0xdb3
+  1f27ac: 9114e842     	add	x2, x2, #0x53a
+  1f27b0: 528000c0     	mov	w0, #0x6                // =6
+  1f27b4: 2a1403e3     	mov	w3, w20
+  1f27b8: 94055562     	bl	0x347d40 <__android_log_print@plt>
+  1f27bc: 12800013     	mov	w19, #-0x1              // =-1
+  1f27c0: f94016c8     	ldr	x8, [x22, #0x28]
+  1f27c4: f85f83a9     	ldur	x9, [x29, #-0x8]
+  1f27c8: eb09011f     	cmp	x8, x9
+  1f27cc: 54000121     	b.ne	0x1f27f0 <_Z13create_devicev+0x2f4>
+  1f27d0: 2a1303e0     	mov	w0, w19
+  1f27d4: 9111c3ff     	add	sp, sp, #0x470
+  1f27d8: a9444ff4     	ldp	x20, x19, [sp, #0x40]
+  1f27dc: a94357f6     	ldp	x22, x21, [sp, #0x30]
+  1f27e0: a9425ff8     	ldp	x24, x23, [sp, #0x20]
+  1f27e4: f9400bfc     	ldr	x28, [sp, #0x10]
+  1f27e8: a8c57bfd     	ldp	x29, x30, [sp], #0x50
+  1f27ec: d65f03c0     	ret
+  1f27f0: 9405557c     	bl	0x347de0 <__stack_chk_fail@plt>

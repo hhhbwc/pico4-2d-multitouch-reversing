@@ -1,0 +1,149 @@
+﻿===== update_display_id (0x1f27f4) =====
+
+/mnt/c/Users/wzy/.openclaw/workspace/pico4/mt/libxrshell.so:	file format elf64-littleaarch64
+
+Disassembly of section .text:
+
+00000000001f27f4 <_Z17update_display_idii>:
+  1f27f4: d10183ff     	sub	sp, sp, #0x60
+  1f27f8: a9027bfd     	stp	x29, x30, [sp, #0x20]
+  1f27fc: 910083fd     	add	x29, sp, #0x20
+  1f2800: f9001bf7     	str	x23, [sp, #0x30]
+  1f2804: a90457f6     	stp	x22, x21, [sp, #0x40]
+  1f2808: a9054ff4     	stp	x20, x19, [sp, #0x50]
+  1f280c: d0000b76     	adrp	x22, 0x360000 <_ZTVSt12out_of_range+0x18>
+  1f2810: d53bd055     	mrs	x21, TPIDR_EL0
+  1f2814: f94016a8     	ldr	x8, [x21, #0x28]
+  1f2818: f94686d6     	ldr	x22, [x22, #0xd08]
+  1f281c: f81f83a8     	stur	x8, [x29, #-0x8]
+  1f2820: b94002c8     	ldr	w8, [x22]
+  1f2824: 6b01011f     	cmp	w8, w1
+  1f2828: 54000560     	b.eq	0x1f28d4 <_Z17update_display_idii+0xe0>
+  1f282c: 2a0103f3     	mov	w19, w1
+  1f2830: 2a0003f4     	mov	w20, w0
+  1f2834: 910003e0     	mov	x0, sp
+  1f2838: aa1f03e1     	mov	x1, xzr
+  1f283c: a9007fff     	stp	xzr, xzr, [sp]
+  1f2840: f9000bff     	str	xzr, [sp, #0x10]
+  1f2844: 9405627b     	bl	0x34b230 <gettimeofday@plt>
+  1f2848: 52800088     	mov	w8, #0x4                // =4
+  1f284c: 910003e1     	mov	x1, sp
+  1f2850: 2a1403e0     	mov	w0, w20
+  1f2854: 52800302     	mov	w2, #0x18               // =24
+  1f2858: 29024fe8     	stp	w8, w19, [sp, #0x10]
+  1f285c: 94056279     	bl	0x34b240 <write@plt>
+  1f2860: d0000b77     	adrp	x23, 0x360000 <_ZTVSt12out_of_range+0x18>
+  1f2864: f9437af7     	ldr	x23, [x23, #0x6f0]
+  1f2868: b6f801c0     	tbz	x0, #0x3f, 0x1f28a0 <_Z17update_display_idii+0xac>
+  1f286c: 94055649     	bl	0x348190 <__errno@plt>
+  1f2870: b9400000     	ldr	w0, [x0]
+  1f2874: 94056277     	bl	0x34b250 <strerror@plt>
+  1f2878: b94002e8     	ldr	w8, [x23]
+  1f287c: 71001d1f     	cmp	w8, #0x7
+  1f2880: 5400028a     	b.ge	0x1f28d0 <_Z17update_display_idii+0xdc>
+  1f2884: 90fff9c1     	adrp	x1, 0x12a000 <_ZTS17SoundEffectAction+0xab1f>
+  1f2888: f0fff982     	adrp	x2, 0x125000 <_ZTS17SoundEffectAction+0x5b1f>
+  1f288c: aa0003e3     	mov	x3, x0
+  1f2890: 9136cc21     	add	x1, x1, #0xdb3
+  1f2894: 91155842     	add	x2, x2, #0x556
+  1f2898: 528000c0     	mov	w0, #0x6                // =6
+  1f289c: 94055529     	bl	0x347d40 <__android_log_print@plt>
+  1f28a0: b94002e8     	ldr	w8, [x23]
+  1f28a4: 71000d1f     	cmp	w8, #0x3
+  1f28a8: 5400014c     	b.gt	0x1f28d0 <_Z17update_display_idii+0xdc>
+  1f28ac: 90fff9c1     	adrp	x1, 0x12a000 <_ZTS17SoundEffectAction+0xab1f>
+  1f28b0: f0fff9c2     	adrp	x2, 0x12d000 <_ZTS17SoundEffectAction+0xdb1f>
+  1f28b4: b94002c4     	ldr	w4, [x22]
+  1f28b8: 9136cc21     	add	x1, x1, #0xdb3
+  1f28bc: 91320042     	add	x2, x2, #0xc80
+  1f28c0: 52800080     	mov	w0, #0x4                // =4
+  1f28c4: 2a1403e3     	mov	w3, w20
+  1f28c8: 2a1303e5     	mov	w5, w19
+  1f28cc: 9405551d     	bl	0x347d40 <__android_log_print@plt>
+  1f28d0: b90002d3     	str	w19, [x22]
+  1f28d4: f94016a8     	ldr	x8, [x21, #0x28]
+  1f28d8: f85f83a9     	ldur	x9, [x29, #-0x8]
+  1f28dc: eb09011f     	cmp	x8, x9
+  1f28e0: 540000e1     	b.ne	0x1f28fc <_Z17update_display_idii+0x108>
+  1f28e4: a9454ff4     	ldp	x20, x19, [sp, #0x50]
+  1f28e8: a94457f6     	ldp	x22, x21, [sp, #0x40]
+  1f28ec: a9427bfd     	ldp	x29, x30, [sp, #0x20]
+  1f28f0: f9401bf7     	ldr	x23, [sp, #0x30]
+  1f28f4: 910183ff     	add	sp, sp, #0x60
+  1f28f8: d65f03c0     	ret
+  1f28fc: 94055539     	bl	0x347de0 <__stack_chk_fail@plt>
+===== update_device_id (0x1f2900) =====
+
+/mnt/c/Users/wzy/.openclaw/workspace/pico4/mt/libxrshell.so:	file format elf64-littleaarch64
+
+Disassembly of section .text:
+
+00000000001f2900 <_Z16update_device_idii>:
+  1f2900: d10183ff     	sub	sp, sp, #0x60
+  1f2904: a9027bfd     	stp	x29, x30, [sp, #0x20]
+  1f2908: 910083fd     	add	x29, sp, #0x20
+  1f290c: f9001bf7     	str	x23, [sp, #0x30]
+  1f2910: a90457f6     	stp	x22, x21, [sp, #0x40]
+  1f2914: a9054ff4     	stp	x20, x19, [sp, #0x50]
+  1f2918: d0000b76     	adrp	x22, 0x360000 <_ZTVSt12out_of_range+0x18>
+  1f291c: d53bd055     	mrs	x21, TPIDR_EL0
+  1f2920: f94016a8     	ldr	x8, [x21, #0x28]
+  1f2924: f9468ad6     	ldr	x22, [x22, #0xd10]
+  1f2928: f81f83a8     	stur	x8, [x29, #-0x8]
+  1f292c: b94002c8     	ldr	w8, [x22]
+  1f2930: 6b01011f     	cmp	w8, w1
+  1f2934: 54000580     	b.eq	0x1f29e4 <_Z16update_device_idii+0xe4>
+  1f2938: 2a0103f3     	mov	w19, w1
+  1f293c: 2a0003f4     	mov	w20, w0
+  1f2940: 910003e0     	mov	x0, sp
+  1f2944: aa1f03e1     	mov	x1, xzr
+  1f2948: a9007fff     	stp	xzr, xzr, [sp]
+  1f294c: f9000bff     	str	xzr, [sp, #0x10]
+  1f2950: 94056238     	bl	0x34b230 <gettimeofday@plt>
+  1f2954: 52800088     	mov	w8, #0x4                // =4
+  1f2958: 910003e1     	mov	x1, sp
+  1f295c: 72a00028     	movk	w8, #0x1, lsl #16
+  1f2960: 2a1403e0     	mov	w0, w20
+  1f2964: 52800302     	mov	w2, #0x18               // =24
+  1f2968: 29024fe8     	stp	w8, w19, [sp, #0x10]
+  1f296c: 94056235     	bl	0x34b240 <write@plt>
+  1f2970: d0000b77     	adrp	x23, 0x360000 <_ZTVSt12out_of_range+0x18>
+  1f2974: f9437af7     	ldr	x23, [x23, #0x6f0]
+  1f2978: b6f801c0     	tbz	x0, #0x3f, 0x1f29b0 <_Z16update_device_idii+0xb0>
+  1f297c: 94055605     	bl	0x348190 <__errno@plt>
+  1f2980: b9400000     	ldr	w0, [x0]
+  1f2984: 94056233     	bl	0x34b250 <strerror@plt>
+  1f2988: b94002e8     	ldr	w8, [x23]
+  1f298c: 71001d1f     	cmp	w8, #0x7
+  1f2990: 5400028a     	b.ge	0x1f29e0 <_Z16update_device_idii+0xe0>
+  1f2994: 90fff9c1     	adrp	x1, 0x12a000 <_ZTS17SoundEffectAction+0xab1f>
+  1f2998: f0fff982     	adrp	x2, 0x125000 <_ZTS17SoundEffectAction+0x5b1f>
+  1f299c: aa0003e3     	mov	x3, x0
+  1f29a0: 9136cc21     	add	x1, x1, #0xdb3
+  1f29a4: 91155842     	add	x2, x2, #0x556
+  1f29a8: 528000c0     	mov	w0, #0x6                // =6
+  1f29ac: 940554e5     	bl	0x347d40 <__android_log_print@plt>
+  1f29b0: b94002e8     	ldr	w8, [x23]
+  1f29b4: 71000d1f     	cmp	w8, #0x3
+  1f29b8: 5400014c     	b.gt	0x1f29e0 <_Z16update_device_idii+0xe0>
+  1f29bc: 90fff9c1     	adrp	x1, 0x12a000 <_ZTS17SoundEffectAction+0xab1f>
+  1f29c0: f0fff9a2     	adrp	x2, 0x129000 <_ZTS17SoundEffectAction+0x9b1f>
+  1f29c4: b94002c4     	ldr	w4, [x22]
+  1f29c8: 9136cc21     	add	x1, x1, #0xdb3
+  1f29cc: 9106f042     	add	x2, x2, #0x1bc
+  1f29d0: 52800080     	mov	w0, #0x4                // =4
+  1f29d4: 2a1403e3     	mov	w3, w20
+  1f29d8: 2a1303e5     	mov	w5, w19
+  1f29dc: 940554d9     	bl	0x347d40 <__android_log_print@plt>
+  1f29e0: b90002d3     	str	w19, [x22]
+  1f29e4: f94016a8     	ldr	x8, [x21, #0x28]
+  1f29e8: f85f83a9     	ldur	x9, [x29, #-0x8]
+  1f29ec: eb09011f     	cmp	x8, x9
+  1f29f0: 540000e1     	b.ne	0x1f2a0c <_Z16update_device_idii+0x10c>
+  1f29f4: a9454ff4     	ldp	x20, x19, [sp, #0x50]
+  1f29f8: a94457f6     	ldp	x22, x21, [sp, #0x40]
+  1f29fc: a9427bfd     	ldp	x29, x30, [sp, #0x20]
+  1f2a00: f9401bf7     	ldr	x23, [sp, #0x30]
+  1f2a04: 910183ff     	add	sp, sp, #0x60
+  1f2a08: d65f03c0     	ret
+  1f2a0c: 940554f5     	bl	0x347de0 <__stack_chk_fail@plt>

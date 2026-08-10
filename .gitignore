@@ -1,0 +1,20 @@
+# 编译产物 / 二进制（不入库）
+*.so
+*.dex
+*.apk
+*.o
+mtinject
+mtinject_mt
+touch2_test
+mtinject-binary
+
+# 设备拉取的专有二进制
+libpxrcontrollerservice.so
+libvirtualinput.so
+libvirtualinputclient.so
+libxrshell.so
+virtual_input_bin
+
+# 临时 / 日志
+*.log
+/tmp/

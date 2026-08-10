@@ -1,0 +1,152 @@
+add device 1: /dev/input/event2
+  bus:      0005
+  vendor    1234
+  product   5678
+  version   0001
+  name:     "virtual_input_device"
+  location: ""
+  id:       ""
+  version:  1.0.1
+  events:
+    KEY (0001): 001c  0067  0069  006a  006c  009e  0140  0145*
+                014a 
+    ABS (0003): 0000  : value 0, min 0, max 100000, fuzz 0, flat 0, resolution 0
+                0001  : value 0, min 0, max 100000, fuzz 0, flat 0, resolution 0
+                002f  : value 0, min 0, max 9, fuzz 0, flat 0, resolution 0
+                0035  : value 0, min 0, max 32767, fuzz 0, flat 0, resolution 0
+                0036  : value 0, min 0, max 32767, fuzz 0, flat 0, resolution 0
+                0039  : value 0, min 0, max 65535, fuzz 0, flat 0, resolution 0
+                003a  : value 0, min 0, max 255, fuzz 0, flat 0, resolution 0
+  input props:
+    INPUT_PROP_DIRECT
+add device 2: /dev/input/event7
+  bus:      0006
+  vendor    0000
+  product   0000
+  version   0001
+  name:     "pvr-virtual-input-4"
+  location: ""
+  id:       ""
+  version:  1.0.1
+  events:
+    KEY (0001): 001c  0067  0069  006a  006c  0072  0073  0074 
+                008b  009e  00ac  00c9  0130  0131  0133  0134 
+                014a  0161  0244  02c9  02ca  02cb  02cc 
+    REL (0002): 0006  0008 
+    ABS (0003): 002f  : value 0, min 0, max 9, fuzz 0, flat 0, resolution 0
+                0035  : value 0, min 0, max 32767, fuzz 0, flat 0, resolution 0
+                0036  : value 0, min 0, max 32767, fuzz 0, flat 0, resolution 0
+                0039  : value 0, min 0, max 65535, fuzz 0, flat 0, resolution 0
+                003a  : value 0, min 0, max 255, fuzz 0, flat 0, resolution 0
+  input props:
+    INPUT_PROP_DIRECT
+add device 3: /dev/input/event6
+  bus:      0006
+  vendor    0000
+  product   0000
+  version   0001
+  name:     "pvr-virtual-input-3"
+  location: ""
+  id:       ""
+  version:  1.0.1
+  events:
+    KEY (0001): 001c  0067  0069  006a  006c  0072  0073  0074 
+                008b  009e  00ac  00c9  0130  0131  0133  0134 
+                014a  0161  0244  02c9  02ca  02cb  02cc 
+    REL (0002): 0006  0008 
+    ABS (0003): 002f  : value 0, min 0, max 9, fuzz 0, flat 0, resolution 0
+                0035  : value 0, min 0, max 32767, fuzz 0, flat 0, resolution 0
+                0036  : value 0, min 0, max 32767, fuzz 0, flat 0, resolution 0
+                0039  : value 0, min 0, max 65535, fuzz 0, flat 0, resolution 0
+                003a  : value 0, min 0, max 255, fuzz 0, flat 0, resolution 0
+  input props:
+    INPUT_PROP_DIRECT
+add device 4: /dev/input/event5
+  bus:      0006
+  vendor    0000
+  product   0000
+  version   0001
+  name:     "pvr-virtual-input-2"
+  location: ""
+  id:       ""
+  version:  1.0.1
+  events:
+    KEY (0001): 001c  0067  0069  006a  006c  0072  0073  0074 
+                008b  009e  00ac  00c9  0130  0131  0133  0134 
+                014a  0161  0244  02c9  02ca  02cb  02cc 
+    REL (0002): 0006  0008 
+    ABS (0003): 002f  : value 0, min 0, max 9, fuzz 0, flat 0, resolution 0
+                0035  : value 0, min 0, max 32767, fuzz 0, flat 0, resolution 0
+                0036  : value 0, min 0, max 32767, fuzz 0, flat 0, resolution 0
+                0039  : value 0, min 0, max 65535, fuzz 0, flat 0, resolution 0
+                003a  : value 0, min 0, max 255, fuzz 0, flat 0, resolution 0
+  input props:
+    INPUT_PROP_DIRECT
+add device 5: /dev/input/event4
+  bus:      0006
+  vendor    0000
+  product   0000
+  version   0001
+  name:     "pvr-virtual-input-1"
+  location: ""
+  id:       ""
+  version:  1.0.1
+  events:
+    KEY (0001): 001c  0067  0069  006a  006c  0072  0073  0074 
+                008b  009e  00ac  00c9  0130  0131  0133  0134 
+                014a  0161  0244  02c9  02ca  02cb  02cc 
+    REL (0002): 0006  0008 
+    ABS (0003): 002f  : value 0, min 0, max 9, fuzz 0, flat 0, resolution 0
+                0035  : value 0, min 0, max 32767, fuzz 0, flat 0, resolution 0
+                0036  : value 0, min 0, max 32767, fuzz 0, flat 0, resolution 0
+                0039  : value 0, min 0, max 65535, fuzz 0, flat 0, resolution 0
+                003a  : value 0, min 0, max 255, fuzz 0, flat 0, resolution 0
+  input props:
+    INPUT_PROP_DIRECT
+add device 6: /dev/input/event3
+  bus:      0006
+  vendor    0000
+  product   0000
+  version   0001
+  name:     "pvr-virtual-input-0"
+  location: ""
+  id:       ""
+  version:  1.0.1
+  events:
+    KEY (0001): 001c  0067  0069  006a  006c  0072  0073  0074 
+                008b  009e  00ac  00c9  0130  0131  0133  0134 
+                014a  0161  0244  02c9  02ca  02cb  02cc 
+    REL (0002): 0006  0008 
+    ABS (0003): 002f  : value 0, min 0, max 9, fuzz 0, flat 0, resolution 0
+                0035  : value 0, min 0, max 32767, fuzz 0, flat 0, resolution 0
+                0036  : value 0, min 0, max 32767, fuzz 0, flat 0, resolution 0
+                0039  : value 0, min 0, max 65535, fuzz 0, flat 0, resolution 0
+                003a  : value 0, min 0, max 255, fuzz 0, flat 0, resolution 0
+  input props:
+    INPUT_PROP_DIRECT
+add device 7: /dev/input/event0
+  bus:      0000
+  vendor    0000
+  product   0000
+  version   0000
+  name:     "qpnp_pon"
+  location: "qpnp_pon/input0"
+  id:       ""
+  version:  1.0.1
+  events:
+    KEY (0001): 0073  0074 
+  input props:
+    <none>
+add device 8: /dev/input/event1
+  bus:      0019
+  vendor    0001
+  product   0001
+  version   0100
+  name:     "gpio-keys"
+  location: "gpio-keys/input0"
+  id:       ""
+  version:  1.0.1
+  events:
+    KEY (0001): 001c  0066  0072  009e 
+  input props:
+    <none>

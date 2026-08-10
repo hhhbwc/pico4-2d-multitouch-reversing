@@ -1,0 +1,19 @@
+﻿add device 1: /dev/input/event4
+  bus:      0006
+  vendor    1234
+  product   5678
+  version   0001
+  name:     "virtual_input_device"
+  location: ""
+  id:       ""
+  version:  1.0.1
+  events:
+    KEY (0001): 001c  0067  0069  006a  006c  0072  0073  0074 
+                008b  009e  00ac  00c9  0130  0131  0133  0134 
+                0145  014a  0161  0244  02c9  02ca  02cb  02cc 
+                02cd 
+    ABS (0003): 0000  : value 0, min 0, max 100000, fuzz 0, flat 0, resolution 0
+                0001  : value 0, min 0, max 100000, fuzz 0, flat 0, resolution 0
+    MSC (0004): 0000  0001  0002 
+  input props:
+    INPUT_PROP_DIRECT
